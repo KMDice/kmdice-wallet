@@ -1,0 +1,17 @@
+{
+  "lerna": "2.0.0",
+  "packages": ["packages/*"],
+  "version": "independent",
+  "hoist": false,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        "*.txt",
+        "test/**",
+        "codemods/**",
+        "@(!(built-in-modules|built-ins|plugins)).json"
+      ]
+    }
+  }
+}
